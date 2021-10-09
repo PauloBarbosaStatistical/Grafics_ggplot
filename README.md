@@ -12,14 +12,14 @@ br <- read_country(year = 2019)
 estados <- read_state(code_state = 'all')
 br$geom %>% plot()
 
-#Baixar limites de todos os munic?pios do Brasil para olhar o c?digo do munic?pio
+#Baixar limites de todos os municipios do Brasil para olhar o cidigo do municipio
 br.muni <- read_municipality()
 
-# Baixar os limites de todos os munic?pios do Ce
+# Baixar os limites de todos os municipios do Ce
 ce.muni <- read_municipality(code_muni = "CE", year = 2019)
 ce.muni$geom %>% plot()
 
-# Ler c?digo dos limites territoriais do munic?pio de Paraipaba
+# Ler codigo dos limites territoriais do municipio de Paraipaba
 lookup_muni(name_muni = "Paraipaba")
 
 ce.muni <- read_municipality(code_muni = 2310258)
